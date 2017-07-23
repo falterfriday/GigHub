@@ -9,7 +9,7 @@ namespace GigHub.ViewModels
         public string Time { get; set; }
 
         //set type as int b/c we're getting the genre id
-        public int Genre { get; set; }
+        public byte Genre { get; set; }
 
         public IEnumerable Genres { get; set; }
     }
