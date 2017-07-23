@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 
 namespace GigHub.ViewModels
 {
@@ -12,5 +13,10 @@ namespace GigHub.ViewModels
         public byte Genre { get; set; }
 
         public IEnumerable Genres { get; set; }
+        public DateTime DateTime
+        {
+            get
+            { return DateTime.Parse(string.Format("{0} {1}", Date, Time)); }
+        }
     }
 }
