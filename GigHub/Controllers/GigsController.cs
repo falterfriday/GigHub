@@ -16,7 +16,7 @@ namespace GigHub.Controllers
         }
 
 
-        [Authorize, ValidateAntiForgeryToken]        
+        [Authorize]        
         public ActionResult Create()
         {
             var viewModel = new GigFormViewModel
@@ -27,7 +27,7 @@ namespace GigHub.Controllers
             return View(viewModel);
         }
 
-        [Authorize, HttpPost]
+        [Authorize, HttpPost, ValidateAntiForgeryToken]
         public ActionResult Create(GigFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
