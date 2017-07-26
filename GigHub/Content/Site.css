@@ -29,6 +29,10 @@ textarea {
     background-color: #ff4342;
     border-color: #ff4342;
 }
+.navbar-brand{
+    font-weight:700;
+    font-size:36px;
+}
 
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
@@ -36,6 +40,13 @@ textarea {
 
 .navbar-inverse .navbar-brand {
     color: #fff;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: rgba(195, 31, 31, 0.49);
+}
+.dropdown-menu {
+    box-shadow:none;
+    -webkit-box-shadow:none;
 }
 body, .tooltip {
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
