@@ -1,7 +1,7 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
-    font-size:17px;
+    font-size: 17px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,6 +23,7 @@ select,
 textarea {
     max-width: 280px;
 }
+
 .field-validation-error {
     color: red;
     font-weight: 700;
@@ -33,9 +34,10 @@ textarea {
     background-color: #ff4342;
     border-color: #ff4342;
 }
-.navbar-brand{
-    font-weight:700;
-    font-size:36px;
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 36px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -45,33 +47,90 @@ textarea {
 .navbar-inverse .navbar-brand {
     color: #fff;
 }
+
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: rgba(195, 31, 31, 0.49);
 }
+
 .dropdown-menu {
-    box-shadow:none;
-    -webkit-box-shadow:none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
 }
+
 body, .tooltip {
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .form-group {
     margin-bottom: 20px;
 }
+
 .form-control {
-    font-size:20px;
-    padding:20px 15px;
-    -ms-border-radius:9px;
-    border-radius:9px;
+    font-size: 20px;
+    padding: 20px 15px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
 }
-.form-control:focus{
-    border-color:#2196f3;
-    box-shadow:none;
-    -webkit-box-shadow:none;
-}
+
+    .form-control:focus {
+        border-color: #2196f3;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
 .btn {
     font-size: 20px;
     padding: 7px 20px;
     -ms-border-radius: 9px;
     border-radius: 9px;
+}
+
+/*Page-level Styles*/
+
+.gigs {
+    list-style: none;
+}
+
+    .gigs > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+.details {
+    position: absolute;
+    top: 5px;
+    left: 70px;
+}
+
+.date, .details {
+    display: inline-block;
+}
+
+.gigs > li .date {
+    background: red;
+    color: white;
+    text-align: center;
+    width: 60px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.gigs > li .date .month {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+.gigs > li .date .day {
+    background: #f7f7f7;
+    color: #333;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+.gigs > li .details .artist {
+    font-weight: bold;
+    display: block;
+}
+.gigs > li .details .genre {
+    font-size: 15px;
 }
