@@ -85,6 +85,12 @@ body, .tooltip {
     border-radius: 9px;
 }
 
+.addGigSaveButton {
+    font-size: 20px;
+    padding: 7px 20px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
 /*Page-level Styles*/
 
 .gigs {
