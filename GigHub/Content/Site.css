@@ -79,8 +79,8 @@ body, .tooltip {
     }
 
 .btn {
-    font-size: 20px;
-    padding: 7px 20px;
+    /*font-size: 20px;
+    padding: 7px 20px;*/
     -ms-border-radius: 9px;
     border-radius: 9px;
 }
