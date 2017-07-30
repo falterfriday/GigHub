@@ -97,15 +97,16 @@ body, .tooltip {
     list-style: none;
 }
 
-    .gigs > li {
-        position: relative;
-        margin-bottom: 30px;
-    }
+.gigs > li {
+    position: relative;
+    margin-bottom: 30px;
+}
 
 .details {
     position: absolute;
     top: 5px;
     left: 70px;
+    width: 110px;
 }
 
 .date, .details {
