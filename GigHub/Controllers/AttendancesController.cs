@@ -1,15 +1,15 @@
-﻿using GigHub.Models;
+﻿using GigHub.DTOs;
+using GigHub.Models;
 using Microsoft.AspNet.Identity;
 using System.Linq;
 using System.Web.Http;
-using GigHub.DTOs;
 
 namespace GigHub.Controllers
 {
     [Authorize]
     public class AttendancesController : ApiController
     {
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public AttendancesController()
         {
