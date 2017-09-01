@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -237,9 +238,14 @@
     <Compile Include="Migrations\201707280048085_AddAttendance.Designer.cs">
       <DependentUpon>201707280048085_AddAttendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709010137369_AddFollowing.cs" />
+    <Compile Include="Migrations\201709010137369_AddFollowing.Designer.cs">
+      <DependentUpon>201709010137369_AddFollowing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Attendance.cs" />
+    <Compile Include="Models\Following.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -367,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707280048085_AddAttendance.resx">
       <DependentUpon>201707280048085_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709010137369_AddFollowing.resx">
+      <DependentUpon>201709010137369_AddFollowing.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
