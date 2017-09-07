@@ -17,7 +17,7 @@
             </div>
             <div class="details">
                 <span class="artist">
-                    @gig.Artist.Name
+                    @gig.Artist.Name <button class="btn btn-link btn-sm js-toggle-follow" data-user-id="@gig.ArtistId">Follow</button>
                 </span>
                 <span class="genre">
                     @gig.Genre.Name
@@ -41,6 +41,18 @@
                     })
                     .fail(function () {
                         alert("Something went wrong!");
+                    });
+            });
+
+            $(".js-toggle-follow").click(function (e) {
+                var button = $(e.target);
+                $.post("/api/followings", { followeeId: button.attr("data-user-id") })
+                    .done(function () {
+                        button.text("Following");
+                        button.addClass("disabled")
+                    })
+                    .fail(function () {
+                        alert("Something failed!")
                     });
             });
         });
